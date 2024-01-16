@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        margin-top: 20px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        display: flex;
+        list-style: none;
+        padding: 0 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #393939;
+      }
+      li {
+        cursor: pointer;
+      }
+      .logo img {
+        width: 150px;
+      }
+      ul li img {
+        width: 20px;
+      }
+      .title {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 44px;
+        text-align: center;
+      }
+      .rate {
+        height: 30px;
+        padding-left: 20px;
+      }
+      .down {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 24px;
+        margin: 25px 0;
+      }
+      .download {
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(49, 169, 220);
+        color: white;
+        padding: 17px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .signup {
+        margin-top: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(49, 169, 220);
+        color: white;
+        padding: 17px;
+        font-weight: bold;
+        font-size: 14px;
+        width: 250px;
+      }
+      .submit {
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(49, 169, 220);
+        color: white;
+        padding: 10px 55px ;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .download {
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(49, 169, 220);
+        color: white;
+        padding: 17px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .text {
+        display: flex;
+        padding-left: 300px;
+        align-items: center;
+      }
+      .big {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 22px;
+        margin: 10px 0px 10px 10px;
+      }
+      .small {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        margin: 0 10px -7px 7px;
+      }
+      .downver {
+        display: block;
+        background-color: rgba(187, 187, 187, 0.132);
+        margin-top: 40px;
+        margin: 10px;
+        width: max-content;
+        padding: 40px;
+        text-align: center;
+      }
+      .bit-32 {
+        background-color: rgb(49, 169, 220);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 10px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .bit-64 {
+        background-color: rgb(49, 220, 49);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 10px;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      h3 {
+        margin-bottom: 35px;
+      }
+      .versions {
+        display: flex;
+        justify-content: center;
+      }
+      .news-main {
+        height: 730px;
+        background-color: #222222;
+        color: white;
+        align-items: center;
+        text-align: center;
+      }
+      .news {
+        background-color: #222222;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+      .newsbox2 {
+        margin-top: 60px;
+        text-align: left;
+        margin-left: 290px;
+      }
+      .card {
+        background-color: white;
+        padding: 30px;
+        border: none;
+        border-radius: 20px;
+        margin: 80px 0px 80px 130px;
+      }
+      .Subscribe {
+        color: rgb(49, 169, 220);
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .email{
+        border: 1px solid rgba(171, 171, 171, 0.445);
+        width: 260px;
+        height: 40px;
+      }
+      .inp-one{
+        border: 1px solid rgba(171, 171, 171, 0.445);
+        height: 40px;
+        margin: 15px 0;
+        padding: 0 15px;
+      }
+      .news-title {
+        font-size: 24px;
+        padding-bottom: 2px;
+      }
+      footer {
+        margin: 100px 0;        
+        display: flex;
+        justify-content: center;
+
+      }
+      .foot{
+        margin: 0 30px;
+      }
+      ol{
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        color: rgb(61, 61, 61);
+        font-size: 15px;
+      }
+      .foot h4{
+        margin-bottom: 15px;
+      }
+      .share{
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+            alt=""
+          />
+        </div>
+        <ul>
+          <li>
+            Products
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              class="injected-svg"
+              data-src="/icons/arrow-down-01-stroke-rounded.svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              role="img"
+              color="#000000"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            Pricing
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              class="injected-svg"
+              data-src="/icons/arrow-down-01-stroke-rounded.svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              role="img"
+              color="#000000"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            Resources
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              class="injected-svg"
+              data-src="/icons/arrow-down-01-stroke-rounded.svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              role="img"
+              color="#000000"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            About us
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              class="injected-svg"
+              data-src="/icons/arrow-down-01-stroke-rounded.svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              role="img"
+              color="#000000"
+            >
+              <path
+                d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Language_icon.png"
+              alt=""
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+        <p>Download <strong> UltraEdit</strong> for Windows</p>
+        <img
+          src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"
+          alt=""
+          class="rate"
+        />
+      </div>
+      <div class="down">
+        <p>
+          Download and try UltraEdit before you buy it! This download includes
+          the full Windows <br />version of the text editor.
+        </p>
+        <button class="download">DOWNLOAD MAC OR LINUX VERSION</button>
+      </div>
+      <div class="text">
+        <img
+          src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png"
+          alt=""
+          width="60px"
+          class="lo"
+        />
+        <p class="big">Download UltraEdit</p>
+        <p class="small">v2023.2(released 12/15/2023) | Hotfix</p>
+      </div>
+      <div class="versions">
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="versions">
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="versions">
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+        <div class="downver">
+          <h3>English</h3>
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+
+      <div class="news-main">
+        <div class="news">
+          <div class="newsbox1">
+            <h2>Join the UltraEdit newsletter</h2>
+            <p>
+              Sign up for our newsletter and receive emails for the latest
+              <br />
+              news, blogs, and special deals on UltraEdit.
+            </p>
+          </div>
+          <div class="card">
+            <p class="Subscribe">Subscribe to our emails</p>
+            <p style="color: #393939">Enter email address</p>
+            <input type="text" class="email" /> <br />
+            <button class="signup">SIGN UP</button>
+          </div>
+        </div>
+        <div class="newsbox2">
+          <p class="news-title">EXE or MSI?</p>
+          <p>
+            The EXE builds of our products are the preferred download for most
+            of our users, running Windows 8.1 and later.
+          </p>
+          <br />
+          <p>
+            We make MSI builds available for bulk or silent deployments (command
+            line, GPO, SCCM, etc.). Get the UltraEdit MSI installer.
+          </p>
+          <br />
+          <p class="news-title">Free trial period</p>
+          <p>
+            This application comes with a free, fully functional 30 day trial
+            period. After the trial period expires, you must purchase a license
+            to <br />
+            continue using it.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="foot">
+        <h4>What's your language?</h4>
+        <ol>
+          <li>Code editor (General)</li>
+          <li>Text editor</li>
+          <li>Hex / Binary</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Unix shell scripts</li>
+          <li>PL / SQL</li>
+          <li>EDI</li>
+          <li>C++</li>
+          <li>PHP</li>
+          <li>XML</li>
+          <li>Markdown</li>
+          <li>SAS</li>
+          <li>Visual Basic (VB)</li>
+        </ol>
+      </div>
+      <div class="foot">
+        <h4>What type of user are you?</h4>
+        <ol>
+          <li>Programmer / Developer</li>
+          <li>Web Developer</li>
+          <li>Database Manager</li>
+          <li>System Administrator</li>
+          <li>Technical Writer</li>
+          <li>Editor / Publisher</li>
+          <li>Medical / Pharmaceutical</li>
+        </ol>
+      </div>
+      <div class="foot">
+        <h4>General</h4>
+        <ol>
+          <li>Contact</li>
+          <li>License Agreement (EULA)</li>
+          <li>End of Life Policy</li>
+          <li>Libraries and Patents</li>
+          <li>Information Policy</li>
+          <li>Privacy Policy</li>
+          <li>Uninstall Instructions</li>
+          <li>Sitemap</li>
+          <li>Legal</li>
+        </ol>
+      </div>
+      <div class="foot">
+        <h4>Subscribe to Newsletter</h4>
+        <ol>
+          <li>Get the latest news <br> on new releases, event, <br> and developments.</li>
+          <li><input type="text" class="inp-one" placeholder="Enter email address..."></li>
+          <li><button class="submit">SUBSCRIBE</button></li>
+        </ol>
+      </div>
+    </footer>
+    <div class="share">
+        <header>
+            <nav>
+              <div class="logo">
+                <img
+                  src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+                  alt=""
+                />
+                <p style="font-size: 12px;">©2024 UltraEdit. All rights reserved</p>
+              </div>
+             <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/new-twitter-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                    <path d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/github-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                    <path d="M2 17C3.63025 20.3926 6.29407 21.6055 9.5 20.721" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path>
+                    <path d="M11 16.4922L11.6345 16.8921C11.7611 16.6913 11.7851 16.4424 11.6993 16.2211C11.6134 15.9998 11.4279 15.8321 11.1991 15.7691L11 16.4922ZM16 16.4922L15.8009 15.7691C15.5721 15.8321 15.3866 15.9998 15.3007 16.2211C15.2149 16.4424 15.2389 16.6913 15.3655 16.8921L16 16.4922ZM10.1515 3.42249L9.66201 3.99075L9.95606 4.24403L10.3327 4.15028L10.1515 3.42249ZM6.31748 5.96247L6.93108 6.39373L7.12789 6.11372L7.04533 5.78156L6.31748 5.96247ZM16.8485 3.42252L16.6673 4.1503L17.0439 4.24406L17.338 3.99077L16.8485 3.42252ZM20.6825 5.96247L19.9547 5.78156L19.8721 6.11372L20.0689 6.39373L20.6825 5.96247ZM20.6068 2L21.3056 1.72771C21.1934 1.43967 20.9159 1.25 20.6068 1.25V2ZM6.39322 2V1.25C6.08409 1.25 5.80663 1.43967 5.6944 1.72771L6.39322 2ZM11.1991 15.7691C9.71636 15.361 8.35833 14.8022 7.37257 13.8754C6.4169 12.9768 5.75 11.6745 5.75 9.6286H4.25C4.25 12.0507 5.06153 13.7613 6.34507 14.9682C7.59852 16.1467 9.24049 16.7858 10.8009 17.2153L11.1991 15.7691ZM21.25 9.6286C21.25 11.6745 20.5831 12.9768 19.6274 13.8754C18.6417 14.8022 17.2836 15.361 15.8009 15.7691L16.1991 17.2153C17.7595 16.7858 19.4015 16.1467 20.6549 14.9682C21.9385 13.7613 22.75 12.0507 22.75 9.6286H21.25ZM9.25 18.4951V22H10.75V18.4951H9.25ZM16.25 18.4951V22H17.75V18.4951H16.25ZM10.3655 16.0924C10.3212 16.1627 10.2546 16.2456 10.1382 16.3879C10.0327 16.5169 9.8953 16.6844 9.76641 16.8761C9.49954 17.273 9.25 17.8003 9.25 18.4951H10.75C10.75 18.1884 10.8522 17.9495 11.0112 17.713C11.0953 17.588 11.1894 17.4719 11.2992 17.3377C11.3981 17.2168 11.5306 17.057 11.6345 16.8921L10.3655 16.0924ZM15.3655 16.8921C15.4694 17.057 15.6019 17.2168 15.7008 17.3377C15.8106 17.4719 15.9047 17.588 15.9888 17.713C16.1478 17.9495 16.25 18.1884 16.25 18.4951H17.75C17.75 17.8003 17.5005 17.273 17.2336 16.8761C17.1047 16.6844 16.9673 16.5169 16.8618 16.3879C16.7454 16.2456 16.6788 16.1627 16.6345 16.0924L15.3655 16.8921ZM10.3327 4.15028C11.0491 3.97193 12.0928 3.72317 13.5 3.72315L13.5 2.22315C11.9072 2.22318 10.7218 2.50761 9.9703 2.6947L10.3327 4.15028ZM5.75 9.6286C5.75 9.17157 5.88162 8.58708 6.11005 7.98082C6.33606 7.38098 6.63711 6.81199 6.93108 6.39373L5.70387 5.5312C5.32979 6.06345 4.9721 6.74673 4.70638 7.45193C4.44309 8.15071 4.25 8.92404 4.25 9.6286H5.75ZM13.5 3.72315C14.9072 3.72312 15.9509 3.97195 16.6673 4.1503L17.0297 2.69473C16.2782 2.50765 15.0928 2.22312 13.5 2.22315L13.5 3.72315ZM20.0689 6.39373C20.3629 6.81199 20.6639 7.38098 20.8899 7.98082C21.1184 8.58708 21.25 9.17157 21.25 9.6286H22.75C22.75 8.92404 22.5569 8.15071 22.2936 7.45193C22.0279 6.74673 21.6702 6.06345 21.2961 5.5312L20.0689 6.39373ZM21.4104 6.14337C21.568 5.50932 21.6612 4.72946 21.6599 3.96175C21.6586 3.20254 21.5649 2.3931 21.3056 1.72771L19.908 2.27229C20.0732 2.6964 20.1588 3.29919 20.1599 3.96433C20.161 4.62098 20.0799 5.2776 19.9547 5.78156L21.4104 6.14337ZM20.6068 2C20.6068 1.25 20.6065 1.25 20.6063 1.25C20.6062 1.25 20.6059 1.25 20.6057 1.25C20.6053 1.25 20.6049 1.25 20.6044 1.25C20.6035 1.25001 20.6024 1.25001 20.6013 1.25002C20.5989 1.25003 20.596 1.25005 20.5926 1.25009C20.5858 1.25016 20.577 1.25029 20.5663 1.25053C20.5447 1.251 20.5154 1.25189 20.4788 1.25356C20.4057 1.2569 20.3036 1.26337 20.1775 1.27591C19.9259 1.30095 19.5761 1.3505 19.1702 1.44895C18.3635 1.6446 17.3027 2.04148 16.359 2.85426L17.338 3.99077C18.0459 3.38104 18.8641 3.06666 19.5237 2.90668C19.851 2.82732 20.131 2.78795 20.3261 2.76854C20.4233 2.75886 20.4987 2.75422 20.5472 2.752C20.5715 2.75089 20.589 2.75039 20.5992 2.75017C20.6042 2.75006 20.6075 2.75001 20.6087 2.75C20.6094 2.74999 20.6096 2.74999 20.6092 2.74999C20.6091 2.75 20.6088 2.75 20.6084 2.75C20.6082 2.75 20.6079 2.75 20.6077 2.75C20.6075 2.75 20.6073 2.75 20.6072 2.75C20.607 2.75 20.6068 2.75 20.6068 2ZM10.6409 2.85423C9.69734 2.04146 8.63648 1.64459 7.82982 1.44894C7.42392 1.3505 7.07406 1.30095 6.82249 1.27591C6.69644 1.26337 6.59428 1.2569 6.52119 1.25356C6.48462 1.25189 6.45525 1.251 6.43373 1.25053C6.42297 1.25029 6.41416 1.25016 6.40738 1.25009C6.40399 1.25005 6.40111 1.25003 6.39875 1.25002C6.39757 1.25001 6.39652 1.25001 6.39559 1.25C6.39513 1.25 6.39471 1.25 6.39431 1.25C6.39411 1.25 6.39384 1.25 6.39374 1.25C6.39348 1.25 6.39322 1.25 6.39322 2C6.39322 2.75 6.39298 2.75 6.39275 2.75C6.39268 2.75 6.39246 2.75 6.39233 2.75C6.39206 2.75 6.39182 2.75 6.39162 2.75C6.39121 2.75 6.39092 2.75 6.39076 2.74999C6.39044 2.74999 6.3906 2.74999 6.39125 2.75C6.39255 2.75001 6.39577 2.75006 6.40084 2.75017C6.41098 2.75039 6.42849 2.75089 6.45276 2.752C6.50133 2.75422 6.57667 2.75886 6.67393 2.76854C6.86899 2.78795 7.14904 2.82731 7.47627 2.90668C8.13587 3.06666 8.95414 3.38103 9.66201 3.99075L10.6409 2.85423ZM5.6944 1.72771C5.43514 2.3931 5.3414 3.20254 5.3401 3.96175C5.33877 4.72946 5.43204 5.50932 5.58962 6.14337L7.04533 5.78156C6.92008 5.2776 6.83896 4.62098 6.84009 3.96433C6.84124 3.29919 6.9268 2.6964 7.09205 2.27229L5.6944 1.72771Z" fill="#000000"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/youtube-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                    <path d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z" stroke="#000000" stroke-width="1.5"></path>
+                    <path d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/facebook-02-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/instagram-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path>
+                    <path d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z" stroke="#000000" stroke-width="1.5"></path>
+                    <path d="M17.5078 6.5L17.4988 6.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/linkedin-02-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                    <path d="M4.5 9.5H4C3.05719 9.5 2.58579 9.5 2.29289 9.79289C2 10.0858 2 10.5572 2 11.5V20C2 20.9428 2 21.4142 2.29289 21.7071C2.58579 22 3.05719 22 4 22H4.5C5.44281 22 5.91421 22 6.20711 21.7071C6.5 21.4142 6.5 20.9428 6.5 20V11.5C6.5 10.5572 6.5 10.0858 6.20711 9.79289C5.91421 9.5 5.44281 9.5 4.5 9.5Z" stroke="#000000" stroke-width="1.5"></path>
+                    <path d="M6.5 4.25C6.5 5.49264 5.49264 6.5 4.25 6.5C3.00736 6.5 2 5.49264 2 4.25C2 3.00736 3.00736 2 4.25 2C5.49264 2 6.5 3.00736 6.5 4.25Z" stroke="#000000" stroke-width="1.5"></path>
+                    <path d="M12.326 9.5H11.5C10.5572 9.5 10.0858 9.5 9.79289 9.79289C9.5 10.0858 9.5 10.5572 9.5 11.5V20C9.5 20.9428 9.5 21.4142 9.79289 21.7071C10.0858 22 10.5572 22 11.5 22H12C12.9428 22 13.4142 22 13.7071 21.7071C14 21.4142 14 20.9428 14 20L14.0001 16.5001C14.0001 14.8433 14.5281 13.5001 16.0879 13.5001C16.8677 13.5001 17.5 14.1717 17.5 15.0001V19.5001C17.5 20.4429 17.5 20.9143 17.7929 21.2072C18.0857 21.5001 18.5572 21.5001 19.5 21.5001H19.9987C20.9413 21.5001 21.4126 21.5001 21.7055 21.2073C21.9984 20.9145 21.9985 20.4432 21.9987 19.5006L22.0001 14.0002C22.0001 11.515 19.6364 9.50024 17.2968 9.50024C15.9649 9.50024 14.7767 10.1531 14.0001 11.174C14 10.5439 14 10.2289 13.8632 9.995C13.7765 9.84686 13.6531 9.72353 13.505 9.63687C13.2711 9.5 12.9561 9.5 12.326 9.5Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path>
+                    </svg></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/reddit-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                    <ellipse cx="12" cy="15.5" rx="9" ry="6.5" stroke="#000000" stroke-width="1.5"></ellipse>
+                    <path d="M15.5 16.7803C14.5149 17.548 13.3062 18.0002 12 18.0002C10.6938 18.0002 9.48512 17.548 8.5 16.7803" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                    <circle cx="19" cy="4" r="2" stroke="#000000" stroke-width="1.5"></circle>
+                    <path d="M18 10.0694C18.3687 9.43053 19.0634 9 19.8595 9C21.0417 9 22 9.94921 22 11.1201C22 11.937 21.5336 12.6459 20.8502 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M6 10.0694C5.63125 9.43053 4.93663 9 4.14048 9C2.95833 9 2 9.94921 2 11.1201C2 11.937 2.4664 12.6459 3.14981 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M17 4C14.643 4 13.4645 4 12.7322 4.73223C12 5.46447 12 6.64298 12 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M9.00801 13L8.99902 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M15.008 13L14.999 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></li>
+             </ul>
+            </nav>
+          </header>
+    </div>
+  </body>
+</html>
